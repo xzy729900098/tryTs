@@ -1,0 +1,65 @@
+/* 初始化css */
+html, body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, image, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: $font-base-size;
+  width: 100vw;
+  height: 100vh;
+}
+
+// body 增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小
+body {
+  width: 100%;
+  height: 100%;
+  font-size: $font-base-size;
+}
+
+html, body {
+  background: $color-white;
+  color: $color-black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+p {
+  word-wrap: break-word
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
